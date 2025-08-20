@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Santiago</title>
+    <link rel="stylesheet" href="StylePizza.css">
+</head>
+<body>
+    <div class="text-box">
+        <h1>Pizzaria Santiago</h1>
+        <form method="post" action="teste.jsp">
+            Nome: <br>
+            <input type="text" name="Nome">
+            Email: <br>
+            <input type="email" name="Email">
+            Endereço: <br>
+            <input type="text" name="Endereco">
+            Telefone: <br>
+            <input type="number" name="Telefone">
+            <h2>Realizar Pedido</h2>
+
+        <p>Tamanho:</p>
+            <label><input type="radio" name="Tamanho" value="g"> Grande</label>
+            <label><input type="radio" name="Tamanho" value="m"> Médio</label>
+            <label><input type="radio" name="Tamanho" value="p"> Pequeno</label>
+        <p>Sabores:</p>
+            <select name="Sabor">
+                <option>Calabresa</option>
+                <option>Portuguesa</option>
+                <option>Mussarela</option>
+                <option>Frango Catupiry</option> 
+            </select>
+            <br>
+        <p>Adicionais:</p>
+            <label><input type="checkbox" name="Borda" value="sim"> Borda Recheada</label>
+            <label><input type="checkbox" name="Cebola" value="sim"> Cebola</label>
+            <label><input type="checkbox" name="Azeitona" value="sim"> Azeitona</label>
+
+            <br>
+        <p>Deixe algum comentário:</p>
+            <textarea name="mensagem" rows="2" cols="30"></textarea>
+            <br>
+            <input type="submit" value="Enviar Pedido">
+        </form>
+    </div>
+</body>
+</html>
